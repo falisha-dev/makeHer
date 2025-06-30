@@ -147,9 +147,9 @@ export default function Home() {
                <p className="mt-2 font-body text-muted-foreground">Follow us and be part of our growing community.</p>
             </div>
             <div className="flex items-center gap-4">
-              <a href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors"><TwitterIcon className="w-6 h-6" /></a>
-              <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors"><InstagramIcon className="w-6 h-6" /></a>
-              <a href="#" aria-label="Pinterest" className="text-muted-foreground hover:text-primary transition-colors"><PinterestIcon className="w-6 h-6" /></a>
+              <a href="#" aria-label="Twitter" className="text-primary hover:text-primary/80 transition-colors"><TwitterIcon className="w-6 h-6" /></a>
+              <a href="#" aria-label="Instagram" className="text-primary hover:text-primary/80 transition-colors"><InstagramIcon className="w-6 h-6" /></a>
+              <a href="#" aria-label="Pinterest" className="text-primary hover:text-primary/80 transition-colors"><PinterestIcon className="w-6 h-6" /></a>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-primary/20 text-center text-sm text-muted-foreground font-body">
