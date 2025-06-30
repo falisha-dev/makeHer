@@ -78,7 +78,7 @@ export default function Home() {
             <div className="mt-10 max-w-md mx-auto flex flex-col items-center gap-4">
               <Button asChild size="lg" className="h-14 rounded-full px-10 text-lg">
                 <a href="https://form.typeform.com/to/U6gxkTMC" target="_blank" rel="noopener noreferrer">
-                  Join the Movement
+                  Waitlist Here
                 </a>
               </Button>
               <p className="text-xs text-muted-foreground">Join the waitlist to be the first to know when we launch.</p>
@@ -151,10 +151,11 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 py-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <Logo />
-            <div className="text-center md:text-left">
-               <h3 className="font-headline text-2xl text-foreground">Join the Movement</h3>
-               <p className="mt-2 font-body text-muted-foreground">Follow us and be part of our growing community.</p>
-            </div>
+            <Button asChild size="lg" className="rounded-full px-8">
+                <a href="https://form.typeform.com/to/U6gxkTMC" target="_blank" rel="noopener noreferrer">
+                    Waitlist Here
+                </a>
+            </Button>
             <div className="flex items-center gap-4">
               <a href="#" aria-label="Twitter" className="text-primary hover:text-primary/80 transition-colors"><TwitterIcon className="w-6 h-6" /></a>
               <a href="#" aria-label="Instagram" className="text-primary hover:text-primary/80 transition-colors"><InstagramIcon className="w-6 h-6" /></a>
