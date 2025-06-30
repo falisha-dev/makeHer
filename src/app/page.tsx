@@ -1,10 +1,10 @@
 
-import Image from "next/image";
 import { WaitlistForm } from "@/components/waitlist-form";
 import { Logo } from "@/components/logo";
 import { Card, CardContent } from "@/components/ui/card";
 import { RecommendationDemo } from "@/components/recommendation-demo";
 import { BakeIcon, CommunityIcon, CraftIcon, ExpressIcon, LearnIcon, MarketplaceIcon, PinterestIcon, TwitterIcon, InstagramIcon } from "@/components/icons";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const features = [
   {
@@ -44,22 +44,16 @@ const testimonials = [
     quote: "makeHer has been a sanctuary for me. It's a place where my choice to be a homemaker is celebrated. I've learned so much and connected with amazing women.",
     author: "Eleanor Vance",
     role: "Sourdough Artisan",
-    image: "https://placehold.co/100x100.png",
-    hint: "woman portrait"
   },
   {
     quote: "I finally found my tribe! The tutorials are fantastic and the community is so supportive. It feels like coming home.",
     author: "Beatrice Holloway",
     role: "New Mother & Crafter",
-    image: "https://placehold.co/100x100.png",
-    hint: "woman smiling"
   },
   {
     quote: "The marketplace is my favorite feature. I've been able to turn my passion for knitting into a small business, all within a community that gets it.",
     author: "Clara Dubois",
     role: "Etsy Seller",
-    image: "https://placehold.co/100x100.png",
-    hint: "woman profile"
   },
 ];
 
@@ -121,14 +115,11 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial) => (
                 <Card key={testimonial.author} className="border-primary/20 bg-card shadow-md flex flex-col items-center text-center p-8 pt-10 transition-shadow hover:shadow-xl duration-300">
-                  <Image
-                    src={testimonial.image}
-                    alt={`Portrait of ${testimonial.author}`}
-                    width={80}
-                    height={80}
-                    data-ai-hint={testimonial.hint}
-                    className="rounded-full mb-6 border-2 border-primary/50"
-                  />
+                  <Avatar className="w-20 h-20 mb-6 border-2 border-primary/50">
+                    <AvatarFallback className="bg-primary/20 text-primary font-headline text-3xl">
+                      {testimonial.author.charAt(0)}
+                    </AvatarFallback>
+                  </Avatar>
                   <CardContent className="p-0 flex-grow">
                     <blockquote className="font-body text-lg text-foreground/90 italic leading-relaxed">
                       &ldquo;{testimonial.quote}&rdquo;
