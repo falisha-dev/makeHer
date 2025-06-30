@@ -48,7 +48,7 @@ const prompt = ai.definePrompt({
   name: 'personalizedRecommendationsPrompt',
   input: {schema: PersonalizedRecommendationsInputSchema},
   output: {schema: PersonalizedRecommendationsOutputSchema},
-  prompt: `You are an expert recommendation engine for the makerHer platform, which is a content, marketplace, and community hub for women who embrace nurturing, homemaking, and soft living.
+  prompt: `You are an expert recommendation engine for the makeHer platform, which is a content, marketplace, and community hub for women who embrace nurturing, homemaking, and soft living.
 
   Given the following user profile, content library, and user network, provide personalized content recommendations and connection suggestions for the user.
 

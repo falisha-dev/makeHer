@@ -75,7 +75,7 @@ export default function Home() {
               Where Homemakers Flourish
             </h1>
             <p className="mt-6 max-w-2xl mx-auto font-body text-lg md:text-xl text-muted-foreground">
-              Welcome to makerHer, a digital haven for women who choose the art of homemaking. Share, connect, and grow in a community that celebrates soft living and nurturing hearts.
+              Welcome to makeHer, a digital haven for women who choose the art of homemaking. Share, connect, and grow in a community that celebrates soft living and nurturing hearts.
             </p>
             <div className="mt-10 max-w-md mx-auto">
               <WaitlistForm />
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="font-headline text-4xl md:text-5xl text-foreground">Featured Content</h2>
               <p className="mt-4 max-w-2xl mx-auto font-body text-lg text-muted-foreground">
-                Get a taste of the inspiring and practical content you'll find on makerHer.
+                Get a taste of the inspiring and practical content you'll find on makeHer.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-primary/20 text-center text-sm text-muted-foreground font-body">
-            <p>&copy; {new Date().getFullYear()} makerHer. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} makeHer. All rights reserved.</p>
           </div>
         </div>
       </footer>
