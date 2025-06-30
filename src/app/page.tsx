@@ -1,7 +1,8 @@
+
 import Image from "next/image";
 import { WaitlistForm } from "@/components/waitlist-form";
 import { Logo } from "@/components/logo";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { RecommendationDemo } from "@/components/recommendation-demo";
 import { BakeIcon, CommunityIcon, CraftIcon, ExpressIcon, LearnIcon, MarketplaceIcon, PinterestIcon, TwitterIcon, InstagramIcon } from "@/components/icons";
 
@@ -38,24 +39,27 @@ const features = [
   },
 ];
 
-const featuredContent = [
+const testimonials = [
   {
-    title: "The Art of Sourdough",
-    description: "A beginner's guide to creating and maintaining your own sourdough starter.",
-    image: "https://placehold.co/600x400.png",
-    hint: "sourdough bread"
+    quote: "makeHer has been a sanctuary for me. It's a place where my choice to be a homemaker is celebrated. I've learned so much and connected with amazing women.",
+    author: "Eleanor Vance",
+    role: "Sourdough Artisan",
+    image: "https://placehold.co/100x100.png",
+    hint: "woman portrait"
   },
   {
-    title: "Calm Morning Rhythms",
-    description: "How to establish a peaceful morning routine for your family.",
-    image: "https://placehold.co/600x400.png",
-    hint: "calm morning"
+    quote: "I finally found my tribe! The tutorials are fantastic and the community is so supportive. It feels like coming home.",
+    author: "Beatrice Holloway",
+    role: "New Mother & Crafter",
+    image: "https://placehold.co/100x100.png",
+    hint: "woman smiling"
   },
   {
-    title: "Handmade for the Home",
-    description: "Create beautiful, simple decor with our latest DIY craft tutorial.",
-    image: "https://placehold.co/600x400.png",
-    hint: "handmade home decor"
+    quote: "The marketplace is my favorite feature. I've been able to turn my passion for knitting into a small business, all within a community that gets it.",
+    author: "Clara Dubois",
+    role: "Etsy Seller",
+    image: "https://placehold.co/100x100.png",
+    hint: "woman profile"
   },
 ];
 
@@ -106,24 +110,34 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="content" className="py-16 md:py-24">
+        <section id="testimonials" className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-12">
-              <h2 className="font-headline text-4xl md:text-5xl text-foreground">Featured Content</h2>
+              <h2 className="font-headline text-4xl md:text-5xl text-foreground">What Women Are Saying</h2>
               <p className="mt-4 max-w-2xl mx-auto font-body text-lg text-muted-foreground">
-                Get a taste of the inspiring and practical content you'll find on makeHer.
+                Hear from members who have found their home at makeHer.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {featuredContent.map((content) => (
-                <Card key={content.title} className="overflow-hidden border-primary/20 bg-card shadow-md hover:shadow-xl transition-shadow duration-300">
-                  <Image src={content.image} alt={content.title} width={600} height={400} data-ai-hint={content.hint} className="w-full h-48 object-cover" />
-                  <CardHeader>
-                    <CardTitle className="font-headline text-xl">{content.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="font-body text-muted-foreground">{content.description}</p>
+              {testimonials.map((testimonial) => (
+                <Card key={testimonial.author} className="border-primary/20 bg-card shadow-md flex flex-col items-center text-center p-8 pt-10 transition-shadow hover:shadow-xl duration-300">
+                  <Image
+                    src={testimonial.image}
+                    alt={`Portrait of ${testimonial.author}`}
+                    width={80}
+                    height={80}
+                    data-ai-hint={testimonial.hint}
+                    className="rounded-full mb-6 border-2 border-primary/50"
+                  />
+                  <CardContent className="p-0 flex-grow">
+                    <blockquote className="font-body text-lg text-foreground/90 italic leading-relaxed">
+                      &ldquo;{testimonial.quote}&rdquo;
+                    </blockquote>
                   </CardContent>
+                  <div className="mt-6">
+                    <p className="font-headline text-xl text-foreground">{testimonial.author}</p>
+                    <p className="font-body text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
                 </Card>
               ))}
             </div>
