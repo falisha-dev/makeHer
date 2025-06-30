@@ -1,5 +1,5 @@
 
-import { WaitlistForm } from "@/components/waitlist-form";
+import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
 import { Card, CardContent } from "@/components/ui/card";
 import { RecommendationDemo } from "@/components/recommendation-demo";
@@ -75,9 +75,13 @@ export default function Home() {
             <p className="mt-6 max-w-2xl mx-auto font-body text-lg md:text-xl text-muted-foreground">
               Welcome to makeHer, a digital haven for women who choose the art of homemaking. Share, connect, and grow in a community that celebrates soft living and nurturing hearts.
             </p>
-            <div className="mt-10 max-w-md mx-auto">
-              <WaitlistForm />
-              <p className="mt-4 text-xs text-muted-foreground">Join the waitlist to be the first to know when we launch.</p>
+            <div className="mt-10 max-w-md mx-auto flex flex-col items-center gap-4">
+              <Button asChild size="lg" className="h-14 rounded-full px-10 text-lg">
+                <a href="https://form.typeform.com/to/U6gxkTMC" target="_blank" rel="noopener noreferrer">
+                  Join the Movement
+                </a>
+              </Button>
+              <p className="text-xs text-muted-foreground">Join the waitlist to be the first to know when we launch.</p>
             </div>
           </div>
         </section>
