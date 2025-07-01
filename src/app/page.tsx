@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
 import { Card, CardContent } from "@/components/ui/card";
 import { RecommendationDemo } from "@/components/recommendation-demo";
-import { BakeIcon, CommunityIcon, CraftIcon, ExpressIcon, LearnIcon, MarketplaceIcon, PinterestIcon, TwitterIcon, InstagramIcon } from "@/components/icons";
+import { BakeIcon, CommunityIcon, CraftIcon, ExpressIcon, LearnIcon, MarketplaceIcon, LinkedInIcon, TwitterIcon, InstagramIcon } from "@/components/icons";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const features = [
@@ -41,19 +41,19 @@ const features = [
 
 const testimonials = [
   {
-    quote: "makeHer has been a sanctuary for me. It's a place where my choice to be a homemaker is celebrated. I've learned so much and connected with amazing women.",
-    author: "Eleanor Vance",
-    role: "Sourdough Artisan",
+    quote: "Finally, a platform that celebrates the choice to create a beautiful home life. I can't wait to share my sourdough journey!",
+    author: "Eesha Salim",
+    role: "Mother of 3, Homeschooling Mom",
   },
   {
-    quote: "I finally found my tribe! The tutorials are fantastic and the community is so supportive. It feels like coming home.",
+    quote: "The marketplace feature is brilliant! I've been wanting to sell my handmade candles to people who truly appreciate the craft.",
     author: "Beatrice Holloway",
-    role: "New Mother & Crafter",
+    role: "New Mother & Artisan",
   },
   {
-    quote: "The marketplace is my favorite feature. I've been able to turn my passion for knitting into a small business, all within a community that gets it.",
+    quote: "This is exactly what I've been looking for - a community that understands that homemaking is a beautiful, valuable choice.",
     author: "Clara Dubois",
-    role: "Etsy Seller",
+    role: "Content Creator",
   },
 ];
 
@@ -113,7 +113,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="font-headline text-4xl md:text-5xl text-foreground">What Women Are Saying</h2>
               <p className="mt-4 max-w-2xl mx-auto font-body text-lg text-muted-foreground">
-                Hear from members who have found their home at makeHer.
+                Hear from women who love what we are building at makeHer.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -159,7 +159,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <a href="#" aria-label="Twitter" className="text-primary hover:text-primary/80 transition-colors"><TwitterIcon className="w-6 h-6" /></a>
               <a href="#" aria-label="Instagram" className="text-primary hover:text-primary/80 transition-colors"><InstagramIcon className="w-6 h-6" /></a>
-              <a href="#" aria-label="Pinterest" className="text-primary hover:text-primary/80 transition-colors"><PinterestIcon className="w-6 h-6" /></a>
+              <a href="#" aria-label="LinkedIn" className="text-primary hover:text-primary/80 transition-colors"><LinkedInIcon className="w-6 h-6" /></a>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-primary/20 text-center text-sm text-muted-foreground font-body">

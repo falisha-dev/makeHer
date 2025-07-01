@@ -42,6 +42,6 @@ export const InstagramIcon: FC<IconProps> = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
 );
 
-export const PinterestIcon: FC<IconProps> = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.14.21c-6.84 0-12 5.04-12 11.2 0 4.67 2.9 8.63 6.95 10.23.5.08.68-.22.68-.48v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.45-1.12-1.1-1.42-1.1-1.42-.9-.6.07-.6.07-.6 1 .07 1.52 1 1.52 1 .9 1.5 2.34 1.07 2.9.82.08-.64.35-1.08.63-1.32-2.22-.24-4.55-1.08-4.55-4.82 0-1.06.38-1.93.98-2.6-.1-.25-.42-1.23.1-2.56 0 0 .83-.26 2.75 1.02.8-.22 1.64-.33 2.5-.33.85 0 1.7.1 2.5.33 1.92-1.3 2.75-1.02 2.75-1.02.52 1.33.2 2.3.1 2.56.6.67.98 1.54.98 2.6 0 3.75-2.33 4.58-4.56 4.82.36.3.68.92.68 1.85v2.72c0 .27.18.57.7.48C21.1 20.04 24 16.08 24 11.4c0-6.17-5.14-11.2-11.86-11.2z"/></svg>
+export const LinkedInIcon: FC<IconProps> = ({ className }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
 );
