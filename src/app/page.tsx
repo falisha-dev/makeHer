@@ -77,7 +77,7 @@ export default function Home() {
             </p>
             <div className="mt-10 max-w-md mx-auto flex flex-col items-center gap-4">
               <Button asChild size="lg" className="h-14 rounded-full px-10 text-lg">
-                <a href="https://form.typeform.com/to/U6gxkTMC" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/e7H2nCWP1h5fDLsy9" target="_blank" rel="noopener noreferrer">
                   Waitlist Here
                 </a>
               </Button>
@@ -152,7 +152,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <Logo />
             <Button asChild size="lg" className="rounded-full px-8">
-                <a href="https://form.typeform.com/to/U6gxkTMC" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/e7H2nCWP1h5fDLsy9" target="_blank" rel="noopener noreferrer">
                     Waitlist Here
                 </a>
             </Button>
