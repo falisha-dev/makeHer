@@ -73,7 +73,7 @@ export default function Home() {
               Your Circle for Calm, Comfort, and Connection
             </h1>
             <p className="mt-6 max-w-2xl mx-auto font-body text-lg md:text-xl text-muted-foreground">
-              Welcome to makeHer, a digital haven for women who choose the art of homemaking. Share, connect, and grow in a community that celebrates soft living and nurturing hearts.
+              Welcome to MakeHer, a digital haven for women who choose the art of soft living and homemaking. Share, connect, and grow in a community that celebrates soft living and nurturing hearts.
             </p>
             <div className="mt-10 max-w-md mx-auto flex flex-col items-center gap-4">
               <Button asChild size="lg" className="h-14 rounded-full px-10 text-lg">
