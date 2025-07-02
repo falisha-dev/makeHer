@@ -9,7 +9,7 @@ export function RecommendationDemo() {
         <CardHeader>
           <CardTitle className="font-headline text-3xl md:text-4xl flex items-center gap-3 text-foreground">
             <ShieldCheck className="text-accent w-8 h-8" />
-            A Safe & Nurturing Space
+            A Safe Space
           </CardTitle>
           <p className="font-body text-muted-foreground md:text-lg pt-2">
             Our AI works behind the scenes to ensure makeHer remains a positive and supportive community for everyone. Here’s how it works:
