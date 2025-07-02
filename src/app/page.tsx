@@ -20,40 +20,30 @@ const features = [
   {
     icon: <LearnIcon className="w-8 h-8 text-primary" />,
     title: "Learn & Grow",
-    description: "Access tutorials and guides on baking, crafting, and homemaking skills.",
+    description: "Learn valuable contents from other women who post contents on tutorials, guides, and DIYs",
   },
   {
     icon: <MarketplaceIcon className="w-8 h-8 text-primary" />,
     title: "Shop & Sell",
-    description: "Discover unique handmade goods or start your own shop in our marketplace.",
-  },
-  {
-    icon: <BakeIcon className="w-8 h-8 text-primary" />,
-    title: "Inspiring Recipes",
-    description: "Find and share wholesome recipes for your family to enjoy.",
-  },
-  {
-    icon: <CraftIcon className="w-8 h-8 text-primary" />,
-    title: "Creative DIY",
-    description: "Unleash your creativity with craft projects for a personal touch at home.",
+    description: "Discover unique handmade goods, downloadable digital products or start your own online business.",
   },
 ];
 
 const testimonials = [
   {
-    quote: "Finally, a platform that celebrates the choice to create a beautiful home life. I can't wait to share my sourdough journey!",
+    quote: "Finally, a platform that celebrates the choice to create a beautiful home life. I can't wait to share my daily yoga routine!",
     author: "Eesha Salim",
-    role: "Mother of 3, Homeschooling Mom",
-  },
-  {
-    quote: "The marketplace feature is brilliant! I've been wanting to sell my handmade candles to people who truly appreciate the craft.",
-    author: "Beatrice Holloway",
-    role: "New Mother & Artisan",
+    role: "Online Yoga Coach",
   },
   {
     quote: "This is exactly what I've been looking for - a community that understands that homemaking is a beautiful, valuable choice.",
-    author: "Clara Dubois",
+    author: "Bahjat A",
     role: "Content Creator",
+  },
+  {
+    quote:"The marketplace feature is brilliant! I've been wanting to sell my homemade bread recipes." ,
+    author: "Clara Dubois",
+    role: "New Mother & Baker",
   },
 ];
 
@@ -91,8 +81,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="font-headline text-4xl md:text-5xl text-foreground">A Platform Built for You</h2>
               <p className="mt-4 max-w-2xl mx-auto font-body text-lg text-muted-foreground">
-                Everything you need to nurture your home, family, and soul.
-              </p>
+                </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature) => (
@@ -139,7 +128,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="ai-demo" className="py-16 md:py-24 bg-accent/10">
+        <section id="safety" className="py-16 md:py-24 bg-accent/10">
           <div className="container mx-auto px-4 md:px-6">
             <RecommendationDemo />
           </div>
